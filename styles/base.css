@@ -36,7 +36,7 @@ ul {
   padding: 0px; /* To fix centering problem created by space on left caused by hidden bullet points (list-style: none) */
 }
 
-li {
+#main_nav_li {
   list-style: none;
   display: inline-block;
   margin: 5px 10px;
@@ -47,9 +47,20 @@ li {
   color: ghostwhite;
 }
 
-li:hover {
+#main_nav_li:hover {
   background-color: white;
   opacity: 0.6;
   color: black;
   font-weight: bold;
+}
+
+#connect_li {
+  display: inline-block;
+  margin: 10px;
+  font-size: 30px;
+  color: ghostwhite;
+}
+
+#connect_li:hover {
+  font-size: 45px;
 }
