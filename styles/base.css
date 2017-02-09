@@ -6,6 +6,7 @@
 body {
   background-image: url(https://newevolutiondesigns.com/images/freebies/galaxy-wallpaper-36.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 h1 {
@@ -30,37 +31,4 @@ p {
   font-family: 'Amatic SC', cursive;
   font-weight: bold;
   color: ghostwhite;
-}
-
-ul {
-  padding: 0px; /* To fix centering problem created by space on left caused by hidden bullet points (list-style: none) */
-}
-
-#main_nav_li {
-  list-style: none;
-  display: inline-block;
-  margin: 5px 10px;
-  padding: 0px 30px;
-  font-size: 30px;
-  font-family: 'Amatic SC', cursive;
-  font-weight: bold;
-  color: ghostwhite;
-}
-
-#main_nav_li:hover {
-  background-color: white;
-  opacity: 0.6;
-  color: black;
-  font-weight: bold;
-}
-
-#connect_li {
-  display: inline-block;
-  margin: 10px;
-  font-size: 30px;
-  color: ghostwhite;
-}
-
-#connect_li:hover {
-  font-size: 45px;
 }
