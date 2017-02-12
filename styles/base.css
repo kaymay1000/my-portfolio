@@ -32,3 +32,7 @@ p {
   font-weight: bold;
   color: ghostwhite;
 }
+
+a:link, a:visited {
+  text-decoration: none;
+}

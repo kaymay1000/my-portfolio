@@ -5,6 +5,10 @@
   color: ghostwhite;
 }
 
+.template {
+  display: none;
+}
+
 #main_nav ul {
   display: none;
   padding: 0px 0px 0px 30px;
@@ -45,6 +49,9 @@
     opacity: 0.6;
     color: black;
     font-weight: bold;
+  }
+  #connect_nav ul {
+    padding: 0px;
   }
   #connect_nav li:hover {
     color: black;
