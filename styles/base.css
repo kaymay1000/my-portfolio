@@ -3,8 +3,9 @@
   margin: 0 auto;
 }
 
-body {
-  background-image: url(https://newevolutiondesigns.com/images/freebies/galaxy-wallpaper-36.jpg);
+html {
+  background: url(../imgs/galaxy.jpg) no-repeat center center fixed;
+  /*background img credit: https://newevolutiondesigns.com/images/freebies/galaxy-wallpaper-36.jpg*/
   background-size: cover;
   background-repeat: no-repeat;
 }
