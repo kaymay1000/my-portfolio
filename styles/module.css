@@ -5,9 +5,20 @@
   color: ghostwhite;
 }
 
-#template h1 {
+#k {
+  width: 85px;
+  height: 85px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background-color: rgba(248, 248, 255, 0.1);
+}
+
+#header h2 {
+  font-size: 60px;
+}
+
+#template h2 {
   font-size: 35px;
-  font-family: 'Amatic SC', cursive;
   color: black;
   height: 50px;
   width: 200px;
@@ -109,6 +120,9 @@
   }
   .icon-menu {
     font-size: 25px;
+  }
+  #mainNav:hover ul {
+    display: block;
   }
   #mainNav li {
     font-size: 25px;
