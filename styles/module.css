@@ -5,31 +5,57 @@
   color: ghostwhite;
 }
 
-.template {
-  display: none;
+#template h1 {
+  font-size: 35px;
+  font-family: 'Amatic SC', cursive;
+  color: black;
+  height: 50px;
+  width: 200px;
+  border-style: hidden;
+  background-color: rgba(0, 0, 0, 0); /*transparent rgba*/
+  margin: 0 auto;
+  padding: 10px;
+}
+
+#template p {
+  font-size: 25px;
+  color: black;
+  margin: 0px;
+  padding: 0px;
 }
 
 #mainNav ul {
   display: none;
-  padding: 0px 0px 0px 30px;
+  padding: 0px 0px 0px 35px;
 }
 
 #mainNav li {
   list-style: none;
   display: inline;
-  margin: 5px 10px;
-  padding: 0px 30px;
+  margin: 5px;
+  padding: 0px 20px;
   font-size: 30px;
   font-family: 'Amatic SC', cursive;
-  font-weight: bold;
   color: ghostwhite;
+  border-radius: 20px;
+}
+
+#connectNav ul {
+  height: 30px;
+  width: 180px;
+  background-color: rgba(248, 248, 255, 0.6); /*ghostwhite rgba with 0.6 opacity/alpha value*/
+  border-radius: 20px;
+  margin: 10px auto;
 }
 
 #connectNav li {
   display: inline;
-  margin: 10px;
   font-size: 30px;
-  color: ghostwhite;
+  color: black;
+  padding: 10px;
+}
+#connectNav a {
+  text-decoration: none;
 }
 
 /*LARGER SCREEN STYLING*/
@@ -40,22 +66,30 @@
   }
   #mainNav ul {
     display: block;
+    margin: 20px auto;
   }
   #mainNav li {
     display: inline;
   }
   #mainNav li:hover {
-    background-color: white;
-    opacity: 0.6;
+    background-color: rgba(248, 248, 255, 0.6);
     color: black;
-    font-weight: bold;
   }
   #connectNav ul {
-    padding: 0px;
+    padding: 10px 0px 10px 0px;
   }
   #connectNav li:hover {
-    color: black;
-    font-weight: bold;
+    color: ghostwhite;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 691px) {
+  #mainNav ul {
+    padding: 0px 30px 0px 40px;
+  }
+  #mainNav li {
+    margin: 5px;
+    padding: 5px;
   }
 }
 
@@ -79,17 +113,14 @@
   #mainNav li {
     font-size: 25px;
   }
+  #connectNav ul {
+    height: 25px;
+    width: 160px;
+    padding: 10px 0px;
+  }
   #connectNav li {
     font-size: 25px;
-  }
-}
-
-@media screen and (min-width: 640px) and (max-width: 691px) {
-  #mainNav ul {
-    padding: 0px 30px 0px 40px;
-  }
-  #mainNav li {
-    margin: 5px;
-    padding: 5px;
+    margin: 0px 10px;
+    padding: 0px;
   }
 }
