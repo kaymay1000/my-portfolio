@@ -20,13 +20,13 @@ Project.loadAll = function(rawData) {
   rawData.forEach(function(p) {
     console.log('making project');
     Project.all.push(new Project(p));
-    projectView.appendProject();
   });
 }
 
 Project.fetchAll = function() {
-  if (localStorage.jsonData) {
-    Project.loadAll(JSON.parse(localStorage.jsonData));
+  if (localStorage.jsonProjects) {
+    Project.loadAll(JSON.parse(localStorage.jsonProjects));
+    projectView.appendProject();
     console.log('fetched from localStorage');
   } else {
     let $jsonProjects = $.getJSON('../data/projects.json', function(data) {
