@@ -8,28 +8,32 @@ function Project(obj) {
   this.difficulty = obj.difficulty;
 }
 
-var projects = [];
+Project.all = [];
 
-Project.prototype.toHtml = function() {
-  // Pre-Handlebars templating method (when article element had a class of '.template'):
-  // var $newProject = $('article.template').clone();
-  // $newProject.removeClass('template');
-  // $newProject.find('#title').text(this.title);
-  // $newProject.find('a').attr('href', this.fileSource);
-  // $newProject.find('img').attr('src', this.img);
-  // $newProject.find('#dateCreated').text(this.dateCreated);
-  // $newProject.find('#difficulty').text(this.difficulty);
-  // return $newProject;
-
+Project.prototype.toHtml = function() { //functions that are available to (and should apply to) individual Project instances
   var htmlTemp = $('#handlebarsTemplate').text();
   var compiledTemp = Handlebars.compile(htmlTemp); //Handlebars.compile() returns a function, so we're able to pass it an argument (this) in the next line.
   return compiledTemp(this);
 }
 
-rawData.forEach(function(p) {
-  projects.push(new Project(p));
-});
+Project.loadAll = function(rawData) {
+  rawData.forEach(function(p) {
+    console.log('making project');
+    Project.all.push(new Project(p));
+    projectView.appendProject();
+  });
+}
 
-projects.forEach(function(currProject) {
-  $('#projects').append(currProject.toHtml());
-});
+Project.fetchAll = function() {
+  if (localStorage.jsonData) {
+    Project.loadAll(JSON.parse(localStorage.jsonData));
+    console.log('fetched from localStorage');
+  } else {
+    let $jsonProjects = $.getJSON('../data/projects.json', function(data) {
+      localStorage.setItem('jsonProjects', JSON.stringify(data)); //set stringified JSON in localStorage to prevent need for server call next time
+      Project.loadAll(data);
+      projectView.appendProject();
+      console.log('fetched from JSON');
+    })
+  }
+}
