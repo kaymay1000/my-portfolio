@@ -9,41 +9,37 @@ article {
   background-color: rgba(248, 248, 255, 0.6);
   text-align: center;
   height: auto;
-  width: 475px;
+  width: auto;
   margin: 20px auto;
-  border: 1px none ghostwhite;
   border-radius: 20px;
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 50px;
   font-family: 'Euphoria Script', cursive;
   color: ghostwhite;
+  width: 55px;
+  height: 55px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background-color: rgba(248, 248, 255, 0.1);
 }
 
 h2 {
-  font-size: 45px;
-  font-family: 'Amatic SC', cursive;
-  color: ghostwhite;
-  margin: 20px;
+  font-size: 35px;
+  margin: 10px auto;
 }
 
 p {
-  font-size: 30px;
-  font-family: 'Amatic SC', cursive;
-  color: ghostwhite;
-  margin: 20px
-}
-
-a:link {
-  text-decoration: underline;
-}
-
-a:visited {
-  text-decoration: none;
+  font-size: 25px;
+  margin: 10px auto;
 }
 
 img {
-  height: 200px;
-  width: 200px;
+  height: 100px;
+  width: 100px;
+}
+
+a:visited {
+  color: ghostwhite;
 }
