@@ -12,6 +12,7 @@ article {
   width: auto;
   margin: 20px auto;
   border-radius: 20px;
+  clear: both;
 }
 
 h1 {
@@ -25,14 +26,18 @@ h1 {
   background-color: rgba(248, 248, 255, 0.1);
 }
 
+div {
+  clear: both;
+}
+
 h2 {
   font-size: 35px;
-  margin: 10px auto;
+  margin: 0px 10px;
 }
 
 p {
   font-size: 25px;
-  margin: 10px auto;
+  margin: 0px 10px;
 }
 
 img {

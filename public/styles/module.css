@@ -1,13 +1,19 @@
 .icon-menu {
-  float: left;
+  float: right;
   font-size: 25px;
-  margin: 10px;
+  margin: 10px 10px;
   color: ghostwhite;
 }
 
 .font {
   font-family: 'Amatic SC', cursive;
   color: ghostwhite;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 #header h2 {
@@ -18,19 +24,20 @@
   font-size: 30px;
 }
 
+#mainNav ul {
+  display: none;
+  padding: 0px;
+  list-style: none;
+  clear: both;
+}
+/* toggle functionality?*/
+
 #mainNav:hover ul {
   display: block;
 }
 
-#mainNav ul {
-  display: none;
-}
-/* toggle functionality?*/
-
 #mainNav li {
-  list-style: none;
-  display: block;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 #projects a {
@@ -53,6 +60,7 @@
   border-radius: 20px;
   margin: 10px auto;
   padding: 10px 0px 10px 0px;
+  clear: both;
 }
 
 #connectNav li {

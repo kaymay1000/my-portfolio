@@ -25,6 +25,7 @@
     <p class="center font">Aspiring Software Developer</p>
     <nav id="mainNav">
       <div class="icon-menu"></div> <!-- Hamburger Icon -->
+      <!-- try span instead of div! -->
       <ul>
         <li class="tab font" data-content="home">Home</li>
         <li class="tab font" data-content="aboutMe">About Me</li>
@@ -34,18 +35,22 @@
     </nav>
   </header>
   <main>
-    <section id="home" class="tabContent">
-      <h2 class="font">Welcome to my Portfolio!</h2>
-      <p class="font">Thanks for dropping by. Click around to check out what I've been up to lately at Code Fellows.</p>
+    <section id="home" class="tabContent clearfix">
+      <div class="pageHeaders">
+        <h2 class="font">Welcome to my Portfolio!</h2>
+        <p class="font">Thanks for dropping by. Click around to check out what I've been up to lately at Code Fellows.</p>
+      </div>
     </section>
-    <section id="aboutMe" class="tabContent">
-      <h2 class="font">About Me</h2>
-      <p class="font">My favorite color is purple.</p>
-      <p class="font">My dog's name is Joe Joe.</p>
-      <p class="font">I'm a student at Code Fellows.</p>
+    <section id="aboutMe" class="tabContent clearfix">
+      <div class="pageHeaders">
+        <h2 class="font">About Me</h2>
+        <p class="font">My favorite color is purple.</p>
+        <p class="font">My dog's name is Joe Joe.</p>
+        <p class="font">I'm a student at Code Fellows.</p>
+      </div>
     </section>
     <section id="projects" class="tabContent font"></section>
-    <section id="connect" class="tabContent">
+    <section id="connect" class="tabContent clearfix">
       <nav id="connectNav" class="center">
         <ul>
           <a href="https://twitter.com/kaymay1000" target="_blank"><li class="icon-twitter"></li></a>
@@ -63,7 +68,7 @@
   <script type="text/javascript" src="scripts/projectView.js"></script>
   <script type="text/javascript" src="scripts/app.js"></script>
   <script>
-    Project.fetchAll();
+  Project.fetchAll();
   </script>
 </body>
 </html>
