@@ -38,6 +38,8 @@
 
 #mainNav li {
   font-size: 25px;
+  padding: 0px 10px;
+  text-decoration: underline;
 }
 
 #projects a {
@@ -46,6 +48,8 @@
 
 #projects h2 {
   color: black;
+  text-decoration: underline;
+  padding: 3px auto;
 }
 
 #projects p {

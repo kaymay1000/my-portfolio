@@ -3,6 +3,13 @@ html {
   /*background img credit: https://newevolutiondesigns.com/images/freebies/galaxy-wallpaper-36.jpg*/
   background-size: cover;
   background-repeat: no-repeat;
+  height: 98%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 article {
@@ -47,4 +54,8 @@ img {
 
 a:visited {
   color: ghostwhite;
+}
+
+footer {
+  margin: 10px auto;
 }

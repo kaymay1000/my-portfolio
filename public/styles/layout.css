@@ -6,3 +6,7 @@
 .pageHeaders {
   float: left;
 }
+
+.content {
+  flex: 1;
+}
