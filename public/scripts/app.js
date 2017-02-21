@@ -1,5 +1,7 @@
 'use strict';
 
+(function(module){
+
 function Project(obj) {
   this.title = obj.title;
   this.fileSource = obj.fileSource;
@@ -37,3 +39,6 @@ Project.fetchAll = function() {
     })
   }
 }
+
+module.Project = Project;
+})(window);

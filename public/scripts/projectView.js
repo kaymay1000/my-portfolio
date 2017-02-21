@@ -1,4 +1,5 @@
 'use strict';
+(function(module){
 
 const projectView = {};
 
@@ -17,3 +18,6 @@ projectView.appendProject = function() {
 }
 
 projectView.handleMainNav();
+
+module.projectView = projectView;
+})(window);
