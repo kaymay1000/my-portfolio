@@ -3,6 +3,7 @@
     "title": "Campfire Coffee",
     "fileSource": "https://kaymay1000.github.io/campfire_coffee/",
     "img": "../imgs/coffee.jpg",
+    "imgId": "coffee",
     "dateCreated": "2016-08-15",
     "difficulty": "advanced"
   },
@@ -10,6 +11,7 @@
     "title": "Bus Mall",
     "fileSource": "https://github.com/kaymay1000/bus_mall",
     "img": "../imgs/bus.jpg",
+    "imgId": "bus",
     "dateCreated": "2016-09-20",
     "difficulty": "intermediate"
 
@@ -18,7 +20,48 @@
     "title": "Guessing Game",
     "fileSource": "https://kaymay1000.github.io/guessing_game/",
     "img": "../imgs/question.jpg",
+    "imgId": "guessgame",
     "dateCreated": "2016-07-14",
     "difficulty": "easy"
+  },
+  {
+    "title": "65 Roses",
+    "fileSource": "https://kaymay1000.github.io/campfire_coffee/",
+    "img": "../imgs/rose.jpg",
+    "imgId": "65roses",
+    "dateCreated": "2016-08-17",
+    "difficulty": "difficult"
+  },
+  {
+    "title": "\"That's So Northwest\"",
+    "fileSource": "https://kaymay1000.github.io/campfire_coffee/",
+    "img": "../imgs/pnw.jpg",
+    "imgId": "northwest",
+    "dateCreated": "2016-10-08",
+    "difficulty": "intermediate"
+  },
+  {
+    "title": "Seattleite Weekly",
+    "fileSource": "https://kaymay1000.github.io/campfire_coffee/",
+    "img": "../imgs/seattle.jpg",
+    "imgId": "seattle",
+    "dateCreated": "2016-09-29",
+    "difficulty": "easy"
+  },
+  {
+    "title": "Bucket List",
+    "fileSource": "https://kaymay1000.github.io/campfire_coffee/",
+    "img": "../imgs/bucket.jpg",
+    "imgId": "bucket",
+    "dateCreated": "2016-11-04",
+    "difficulty": "intermediate"
+  },
+  {
+    "title": "Operation: Breathe",
+    "fileSource": "https://kaymay1000.github.io/campfire_coffee/",
+    "img": "../imgs/lungs.jpg",
+    "imgId": "opbreathe",
+    "dateCreated": "2016-12-31",
+    "difficulty": "difficult"
   }
 ]

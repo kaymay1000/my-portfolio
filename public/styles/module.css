@@ -26,6 +26,11 @@
   padding: 3px auto;
 }
 
+#template > img#bus {
+  height: 100px;
+  width: 150px;
+}
+
 #template p {
   color: black;
   margin: 0 auto;
