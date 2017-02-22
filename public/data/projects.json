@@ -30,7 +30,7 @@
     "img": "../imgs/rose.jpg",
     "imgId": "65roses",
     "dateCreated": "2016-08-17",
-    "difficulty": "difficult"
+    "difficulty": "advanced"
   },
   {
     "title": "\"That's So Northwest\"",
@@ -62,6 +62,6 @@
     "img": "../imgs/lungs.jpg",
     "imgId": "opbreathe",
     "dateCreated": "2016-12-31",
-    "difficulty": "difficult"
+    "difficulty": "advanced"
   }
 ]
