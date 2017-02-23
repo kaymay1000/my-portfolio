@@ -6,6 +6,7 @@
     this.title = obj.title;
     this.fileSource = obj.fileSource;
     this.img = obj.img;
+    this.imgId = obj.imgId;
     this.dateCreated = obj.dateCreated;
     this.difficulty = obj.difficulty;
   }
@@ -25,19 +26,43 @@
     });
   }
 
-  Project.fetchAll = function() {
+  Project.fetchAll = function(callback) {
     if (localStorage.jsonProjects) {
       Project.loadAll(JSON.parse(localStorage.jsonProjects));
-      projectView.appendProject();
+      // projectView.appendProject();
       console.log('fetched from localStorage');
+      if (callback) callback(); //if a callback function is passed in to fetchAll, which accepts a callback, but doesn't *need* one to run, then call it.
     } else {
-      let $jsonProjects = $.getJSON('../data/projects.json', function(data) {
+      let $jsonProjects = $.getJSON('../../data/projects.json', function(data) {
         localStorage.setItem('jsonProjects', JSON.stringify(data)); //set stringified JSON in localStorage to prevent need for server call next time
         Project.loadAll(data);
-        projectView.appendProject();
+        // projectView.appendProject();
         console.log('fetched from JSON');
-      })
+        if (callback) callback();
+      });
     }
+  }
+
+  Project.byDifficulty = function() {
+    var projectsByDiff = [];
+    Project.all.map(function(currProject) {
+      if (currProject.difficulty === 'advanced') {
+        projectsByDiff.push(currProject);
+        console.log(projectsByDiff);
+      }
+    });
+    Project.all.map(function(currProject) {
+      if (currProject.difficulty === 'intermediate') {
+        projectsByDiff.push(currProject);
+      }
+    });
+    Project.all.map(function(currProject) {
+      if (currProject.difficulty === 'easy') {
+        projectsByDiff.push(currProject);
+      }
+    });
+    console.log(projectsByDiff, 'Projects by diff array');
+    return projectsByDiff;
   }
 
   module.Project = Project;
