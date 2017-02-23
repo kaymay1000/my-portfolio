@@ -10,7 +10,7 @@
   <link rel="stylesheet" type="text/css" href="styles/icons.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC|Euphoria+Script" >
   <script id="handlebarsTemplate" type="text/x-handlebars-template">
-    <article id="template">
+    <article id="template" data-difficulty={{difficulty}}>
       <a id="fileSource" href="{{fileSource}}" target="_blank"><h2 id="title">{{title}}</h2></a>
       <img id="{{imgId}}" src="{{img}}">
       <p id="dateCreated">{{dateCreated}}</p>
@@ -56,7 +56,7 @@
           <p>Below are some of the projects I've worked on during my time at Code Fellows. All three are products of the first class I took, Introduction to JavaScript.</p>
         </div>
         <select id="diffFilter">
-          <option value="default">--Select Difficulty--</option>
+          <option value="">--Select Difficulty--</option>
           <option value="easy">Easy</option>
           <option value="intermediate">Intermediate</option>
           <option value="advanced">Advanced</option>
@@ -83,10 +83,10 @@
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
-  <script type="text/javascript" src="scripts/projectView.js"></script>
-  <script type="text/javascript" src="scripts/app.js"></script>
-  <script>
+  <script type="text/javascript" src="scripts/views/projectView.js"></script>
+  <script type="text/javascript" src="scripts/models/project.js"></script>
+  <!-- <script>
   Project.fetchAll();
-  </script>
+  </script> -->
 </body>
 </html>
